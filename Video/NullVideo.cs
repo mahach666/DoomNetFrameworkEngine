@@ -1,0 +1,76 @@
+﻿using DoomNetFrameworkEngine.DoomEntity;
+using DoomNetFrameworkEngine.DoomEntity.MathUtils;
+
+namespace DoomNetFrameworkEngine.Video
+{
+    public class NullVideo : IVideo
+    {
+        private static NullVideo instance;
+
+        public static NullVideo GetInstance()
+        {
+            if (instance == null)
+            {
+                instance = new NullVideo();
+            }
+
+            return instance;
+        }
+
+        public void Render(Doom doom, Fixed frameFrac)
+        {
+        }
+
+        public void InitializeWipe()
+        {
+        }
+
+        public bool HasFocus()
+        {
+            return true;
+        }
+
+        public int MaxWindowSize => ThreeDRenderer.MaxScreenSize;
+
+        public int WindowSize
+        {
+            get
+            {
+                return 7;
+            }
+
+            set
+            {
+            }
+        }
+
+        public bool DisplayMessage
+        {
+            get
+            {
+                return true;
+            }
+
+            set
+            {
+            }
+        }
+
+        public int MaxGammaCorrectionLevel => 10;
+
+        public int GammaCorrectionLevel
+        {
+            get
+            {
+                return 2;
+            }
+
+            set
+            {
+            }
+        }
+
+        public int WipeBandCount => 321;
+        public int WipeHeight => 200;
+    }
+}
