@@ -4,4 +4,4 @@ This is a port of the [Managed Doom](https://github.com/sinshu/managed-doom) pro
 
 Original project by [sinshu](https://github.com/sinshu).
 
-You can see an example [here](https://github.com/mahach666/ConsoleDoom).
+You can see an sample [here](https://github.com/mahach666/ConsoleDoom).
